@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  padding:10px 0;
+  text-transform: uppercase;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+}
+
+input {
+  width: 260px;
+  height: 45px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:hover {
+  border-color: cornflowerblue;
+}
+
+input:active {
+  border-color: cornflowerblue;
+}
+
+.radio-group input {
+  width: auto;
+  height:auto;
+  outline: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: rgb(38, 51, 77);
+  border: 1px solid black;
+}
+
+.button-parent-div {
+  padding: 20px 0;
+}
+
+.submit-button {
+  width: 260px;
+  height: 40px;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: rgb(38, 51, 77);
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+.danger {
+  color: rgb(233, 10, 10);
+  background-color: rgb(223, 205, 205);
+  width: 260px;
+  height: 45px;
+  display: flex;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.delete {
+  color: black;
+  background-color: rgb(235, 125, 125);
+  display: flex;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.form-validtion-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-text-container {
+  background-color: forestgreen;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modal-buttons {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:767px){
+  table{
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.employee-info label {
+  font-size: large;
+}
+
+.modal-thankyou {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #FFFFFF;
+  animation: anime 3s alternate-reverse 0s 1 forwards;
+}
+
+@keyframes anime {
+  0% {
+    transform: scale(1,1);
+  }
+  100% { 
+    transform: scale(0.1,0.1);
+  }
+}
+
+.employee-details-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
